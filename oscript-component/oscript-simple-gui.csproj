@@ -81,7 +81,13 @@
     <Compile Include="Elements.cs" />
     <Compile Include="FormButton.cs" />
     <Compile Include="ManagedGUI.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="StandardDialogs.cs" />
+    <Compile Include="SystemTray.cs" />
     <Compile Include="TitleLocation.cs" />
     <Compile Include="FormTree\TreeViewColumns\TreeViewColumns.cs">
       <SubType>UserControl</SubType>
@@ -94,5 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormTree\TreeViewColumns\TreeViewColumns.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtkabout.ico" />
   </ItemGroup>
 </Project>
