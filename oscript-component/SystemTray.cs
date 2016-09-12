@@ -29,15 +29,27 @@ namespace oscriptGUI
             return new NotifyInTray();
         }
 
+        /// <summary>
+        /// Заголовок уведомления
+        /// </summary>
         [ContextProperty("Заголовок", "Title")]
         public string Title { get; set; }
 
+        /// <summary>
+        /// Текст уведомления в трее
+        /// </summary>
         [ContextProperty("Текст", "Text")]
         public string Text { get; set; }
 
+        /// <summary>
+        /// Срок отображения сообщения в трее. Время в секундах.
+        /// </summary>
         [ContextProperty("Таймаут", "Timeout")]
         public int Timeout { get; set; }
 
+        /// <summary>
+        /// Иконка в трее, если не указана - берется по умолчанию из ресурсов. Можно указать путь к файлу со своей иконкой.
+        /// </summary>
         [ContextProperty("Иконка", "Icon")]
         public string Icon {
             get { return _icon; }
@@ -55,10 +67,12 @@ namespace oscriptGUI
             }
         }
 
+        /// <summary>
+        /// Показывает уведомление в трее
+        /// </summary>
         [ContextMethod("Показать", "Show")]
-        private void Show()
+        public void Show()
         {
-            notifyIcon = new NotifyIcon();
             notifyIcon.Visible = true;
 
             if (Title != null)
@@ -71,7 +85,7 @@ namespace oscriptGUI
                 notifyIcon.BalloonTipText = Text;
             }
 
-            notifyIcon.ShowBalloonTip(Timeout);
+            notifyIcon.ShowBalloonTip(Timeout * 1000);
         }
 
     }
