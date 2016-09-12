@@ -6,8 +6,8 @@
  * 
  * Для изменения этого шаблона используйте меню "Инструменты | Параметры | Кодирование | Стандартные заголовки".
  */
-using ScriptEngine.Machine.Contexts;
 using ScriptEngine.Machine;
+using ScriptEngine.Machine.Contexts;
 using System.Collections.Generic;
 using System.Windows.Forms;
 

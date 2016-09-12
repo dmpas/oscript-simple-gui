@@ -1,10 +1,5 @@
 ﻿using ScriptEngine.Machine;
 using ScriptEngine.Machine.Contexts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace oscriptGUI
@@ -13,9 +8,9 @@ namespace oscriptGUI
     class NotifyInTray : AutoContext<NotifyInTray>
     {
 
-        private NotifyIcon notifyIcon;
+        private readonly NotifyIcon notifyIcon; 
         private string _icon;
-
+        
         public NotifyInTray()
         {
             notifyIcon = new NotifyIcon();
@@ -84,8 +79,8 @@ namespace oscriptGUI
             {
                 notifyIcon.BalloonTipText = Text;
             }
-
-            notifyIcon.ShowBalloonTip(Timeout * 1000);
+            
+            notifyIcon.ShowBalloonTip(Timeout);
         }
 
     }

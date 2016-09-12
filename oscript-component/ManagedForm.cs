@@ -1,9 +1,8 @@
-﻿using System;
+﻿using ScriptEngine.Machine;
 using ScriptEngine.Machine.Contexts;
-using ScriptEngine.Machine;
-
-using System.Windows.Forms;
+using System;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace oscriptGUI
 {

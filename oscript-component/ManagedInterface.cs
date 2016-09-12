@@ -1,5 +1,5 @@
-﻿using ScriptEngine.Machine.Contexts;
-using ScriptEngine.Machine;
+﻿using ScriptEngine.Machine;
+using ScriptEngine.Machine.Contexts;
 
 
 namespace oscriptGUI

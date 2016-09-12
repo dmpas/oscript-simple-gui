@@ -3,8 +3,6 @@ using ScriptEngine.HostedScript.Library.ValueTable;
 using ScriptEngine.Machine;
 using ScriptEngine.Machine.Contexts;
 using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 

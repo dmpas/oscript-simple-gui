@@ -6,7 +6,7 @@
     <ProjectGuid>{EA173D06-CCD2-45D5-A263-DC866289517A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>oscriptGUI</RootNamespace>
-    <AssemblyName>oscript-simple-gui</AssemblyName>
+    <AssemblyName>oscript-gui</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <DocumentationFile>bin\Release\oscript-simple-gui.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\oscript-gui.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'oscript-bin|AnyCPU'">
     <OutputPath>..\..\..\portable\OneScript\bin\</OutputPath>

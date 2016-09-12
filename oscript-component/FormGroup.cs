@@ -6,11 +6,11 @@
  * 
  * Для изменения этого шаблона используйте меню "Инструменты | Параметры | Кодирование | Стандартные заголовки".
  */
-using System.Windows.Forms;
-using ScriptEngine.Machine.Contexts;
 using ScriptEngine.Machine;
-using System.Drawing;
+using ScriptEngine.Machine.Contexts;
 using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace oscriptGUI
 {

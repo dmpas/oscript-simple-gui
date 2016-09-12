@@ -9,7 +9,7 @@
 Перем ПровайдерТЗ;
 
 Процедура Инициализация()
-	ПодключитьВнешнююКомпоненту("oscript-component/bin/Release/oscript-simple-gui.dll");
+	ПодключитьВнешнююКомпоненту("oscript-component/bin/Release/oscript-gui.dll");
 КонецПроцедуры
 
 Функция ПолучитьСписокТестов(Тестирование) Экспорт
